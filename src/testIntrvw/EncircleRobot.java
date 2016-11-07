@@ -1,4 +1,4 @@
-/**
+*/**
  * 
  */
 package testIntrvw;
@@ -27,7 +27,8 @@ public class EncircleRobot {
 			int x=0,y=0;
 			String direction=commands[i];
 			char intial ='N';
-			for(int j=0;j<direction.length();j++){
+			for(int j=0;j<direction.length()*4;j++){  //MUltiplied by 4 because after every4 moves it return to starting point
+				
 				char dir=direction.charAt(j);
 				switch(dir){
 				case 'L':
